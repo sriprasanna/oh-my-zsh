@@ -3,7 +3,7 @@
 alias gst='git status'
 alias gl='git pull'
 alias gup='git fetch && git rebase'
-alias gp='git push'
+# alias gp='git push'
 alias gd='git diff | mate'
 alias gdv='git diff -w "$@" | vim -R -'
 alias gc='git commit -v'
