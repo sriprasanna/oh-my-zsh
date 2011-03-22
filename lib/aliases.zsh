@@ -23,3 +23,34 @@ alias sl=ls # often screw this up
 alias afind='ack-grep -il'
 
 alias x=extract
+
+# misc
+alias reload='source ~/.zshrc'
+alias ss='script/server'
+alias sc='script/console'
+alias ..='cd ..'
+alias reload='source ~/.bashrc'
+alias mysqlload='sudo launchctl load -w /Library/LaunchDaemons/com.mysql.mysqld.plist'
+alias mysqlunload='sudo launchctl unload -w /Library/LaunchDaemons/com.mysql.mysqld.plist'
+alias pgsqlload='sudo su postgres -c /opt/local/lib/postgresql84/bin/postgres -D /opt/local/var/db/postgresql84/defaultdb'
+# alias postmasterstart='postmaster -D /opt/local/var/db/postgresql84/defaultdb >logfile 2>&1 &'
+alias postmasterstart='pg_ctl start -D /opt/local/var/db/postgresql84/defaultdb'
+#autotest
+export AUTOFEATURE=true
+export RSPEC=true
+
+#misc functions
+function take () {
+  mkdir "$1";
+  cd "$1"
+}
+
+
+#git 
+alias g='git status'
+alias gsr='git svn rebase'
+alias gca='git commit -a'
+alias greset='git add . && git reset --hard'
+alias gsd='git svn dcommit'
+
+source ~/.projects_path
