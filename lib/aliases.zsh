@@ -35,6 +35,7 @@ alias mysqlunload='sudo launchctl unload -w /Library/LaunchDaemons/com.mysql.mys
 alias pgsqlload='sudo su postgres -c /opt/local/lib/postgresql84/bin/postgres -D /opt/local/var/db/postgresql84/defaultdb'
 # alias postmasterstart='postmaster -D /opt/local/var/db/postgresql84/defaultdb >logfile 2>&1 &'
 alias postmasterstart='pg_ctl start -D /opt/local/var/db/postgresql84/defaultdb'
+alias update-zsh='wget https://github.com/sriprasanna/oh-my-zsh/raw/master/tools/install.sh --no-check-certificate -O - | sh'
 #autotest
 export AUTOFEATURE=true
 export RSPEC=true
