@@ -1,3 +1,7 @@
+This is a fork from https://github.com/robbyrussell/oh-my-zsh 
+To install:
+@wget https://github.com/sriprasanna/oh-my-zsh/raw/master/tools/install.sh -O - | sh@
+
 A handful of functions, auto-complete helpers, and stuff that makes you shout...
 
 bq. "OH MY ZSHELL!"
